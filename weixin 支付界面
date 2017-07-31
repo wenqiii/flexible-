@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+  <title>微信支付界面</title>
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  html {
+    color: #000;
+    background: #fff;
+    font-family: sans-serif;
+  }
+  html,body, .apply-content {
+    height: 100%;
+  }
+  .apply-content {
+    position: relative;
+  }
+  .success-icon {
+    text-align: center;
+    margin-top: 1.740741rem;
+  }
+  .success-icon img {
+    width: 1.296296rem;
+    height: 1.370370rem;
+    padding-bottom: .259259rem;
+  }
+  .success-icon h {
+    display: block;
+    color: green;
+    font-size: .648148rem;
+    font-weight: 400;
+  }
+  .apply-money {
+    text-align: center;
+    margin-top: .5555556rem;
+    margin-bottom: 2.074074rem;
+  }
+  .small {
+    font-size: .814815rem;
+    padding-right: .259259rem;
+    top: 0;
+  }
+  .big {
+    font-size: 1.074074rem;
+  }
+  .pay-box {
+    margin-left: .888889rem;
+    margin-right: .8888889rem;
+    padding-top: .518519rem;
+    border-top: 1px solid grey;
+  }
+  .pay-content {
+    height: .666667rem;
+    line-height: .666667rem;
+    font-size: .407407rem;
+    color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .payee {
+    left: 0;
+    bottom: .092593rem;
+  }
+  .payee-name {
+    height: .666667rem;
+    line-height: .666667rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .payee-name img {
+    width: .592593rem;
+    height: .592593rem;
+    margin-right: .222222rem;
+    border-radius: 50%;
+  }
+  .text {
+    right: 0;
+  }
+  .finish {
+    width: 4.481481rem;
+    height: .851852rem;
+    position: absolute;
+    left: 2.740741rem;
+    right: 2.740741rem;
+    bottom: 1.962963rem;
+    color: green;
+    font-size: .425926rem;
+    background-color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    outline: 0;
+  }
+  @media all and (orientation : landscape){
+    .apply-content {
+      position: relative;
+    }
+    .success-icon {
+      text-align: center;
+      margin-top: 1.740741rem;
+    }
+    .success-icon img {
+      width: 1.296296rem;
+      height: 1.370370rem;
+      padding-bottom: .259259rem;
+    }
+    .success-icon h {
+      display: block;
+      color: green;
+      font-size: .648148rem;
+      font-weight: 400;
+    }
+    .apply-money {
+      text-align: center;
+      margin-top: .5555556rem;
+      margin-bottom: 2.074074rem;
+    }
+    .small {
+      font-size: .814815rem;
+      padding-right: .259259rem;
+      top: 0;
+    }
+    .big {
+      font-size: 1.074074rem;
+    }
+    .pay-box {
+      margin-left: .5rem;
+      margin-right: .5rem;
+      padding-top: .333333rem;
+      padding-bottom: .333333rem;
+      border-top: 1px solid grey;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+    }
+    .pay-content {
+      height: .666667rem;
+      line-height: .666667rem;
+      font-size: .407407rem;
+      color: grey;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .payee {
+      left: 0;
+      bottom: .092593rem;
+    }
+    .payee-name {
+      height: .666667rem;
+      line-height: .666667rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    .payee-name img {
+      width: .592593rem;
+      height: .592593rem;
+      margin-right: .222222rem;
+      border-radius: 50%;
+    }
+    .text {
+      right: 0;
+    }
+    .finish {
+      display: none;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="apply-content">
+    <div class="success-icon">
+      <img src="2.png" alt="">
+      <h>支付成功</h>
+    </div>
+    <div class="apply-money">
+      <span class="small">¥</span>
+      <span class="big">15.00</span>
+    </div>
+    <div class="pay-box">
+      <div class="pay-content">
+        <div class="payee">收款人</div>
+        <div class="payee-name">
+          <img src="1.jpg" alt="图片">
+          <div class="pay-title">不求万人追，只求一人...</div>
+          <div class="text">（***代）</div>
+        </div>
+      </div>
+    </div>
+    <button type="button" name="button" class="finish">完成</button>
+  </div>
+</body>
+</html>
